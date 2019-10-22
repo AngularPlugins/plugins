@@ -7,7 +7,7 @@
     background-color: #34474f;" alt="Transparent logo Angular" width="250" height="250">
         </div>
 
-[![Build Status](https://travis-ci.org/PineboxOrg/project-x.svg?branch=master)](https://travis-ci.org/PineboxOrg/project-x)
+[![Build Status](https://travis-ci.org/AngularPlugins/plugins.svg?branch=master)](https://travis-ci.org/AngularPlugins/plugins)
 [![License](https://img.shields.io/npm/l/@nstudio/schematics.svg?style=flat-square)]()
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)]()
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
