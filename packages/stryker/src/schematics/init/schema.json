@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "stryker-init",
+  "title": "Add Stryker Configuration to the workspace",
+  "type": "object",
+  "properties": {}
+}
