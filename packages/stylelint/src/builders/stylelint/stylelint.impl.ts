@@ -5,7 +5,6 @@ import {
   createBuilder
 } from '@angular-devkit/architect';
 import { Observable, from, of } from 'rxjs';
-import Stryker from '@stryker-mutator/core';
 import { map, tap, catchError } from 'rxjs/operators';
 import { json } from '@angular-devkit/core';
 import { stylelint } from 'stylelint';
@@ -19,7 +18,7 @@ export function createStylelintRunner(
   const config = new StylelintConfiguration(logger, workspaceRoot).validateConfig(
     options
   );
-  return from(stylelint.lint(options)).pipe(
+  return from(stylelint.lint(config)).pipe(
     map(() => ({ success: true })),
     tap(() => logger.warn('Stylelint ran successfully')),
     catchError(e => {

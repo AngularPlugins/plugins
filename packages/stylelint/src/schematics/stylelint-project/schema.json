@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "stylelint-project",
+    "type": "object",
+    "properties": {
+      "project": {
+        "type": "string",
+        "description": "The name of the project.",
+        "$default": {
+          "$source": "argv",
+          "index": 0
+        }
+      },
+      "config": {
+        "type": "object",
+        "description": "extends",
+        "properties": {
+            "extends":{
+            "type": "string",
+            "description": "extends",
+            "default": "stylelint-config-recommended",
+            "x-prompt": {
+              "message": "Which configuration would you like to use?",
+              "type": "list",
+              "items": [
+                {
+                  "value": "stylelint-config-recommended",
+                  "label": "STYLELINT-CONFIG-RECOMMENDED"
+                },
+                {
+                  "value": "stylelint-config-standard",
+                  "label": "STYLELINT-CONFIG-STANDARD"
+                }
+              ]
+            }
+            }
+        }
+      },
+      "formatter": {
+        "type": "string",
+        "description": "Specify the formatter that you would like to use to format your results",
+        "default": "json"
+      },
+      "syntax": {
+        "type": "string",
+        "description": "Force a specific non-standard syntax that should be used to parse source stylesheets",
+        "default": "css",
+      "x-prompt": {
+        "message": "Which stylesheet format would you like to use?",
+        "type": "list",
+        "items": [
+          {
+            "value": "css",
+            "label": "CSS"
+          },
+          {
+            "value": "scss",
+            "label": "SASS(.scss)  [ http://sass-lang.com   ]"
+          },
+          {
+            "value": "less",
+            "label": "LESS         [ http://lesscss.org     ]"
+          },
+          {
+            "value": "html",
+            "label": "HTML"
+          }
+        ]
+      }
+      },
+      "fix": {
+        "type": "boolean",
+        "description": "If true, stylelint will fix as many errors as possible",
+        "default": false
+      }
+    },
+    "required": ["project"]
+  }
+  

@@ -33,17 +33,45 @@
             }
         }
       },
+      "files":{
+        "type": "string",
+        "description": "A file glob, or array of file globs. Ultimately passed to globby to figure out what files you want to lint."
+      },    
       "configFile": {
         "type": "string",
         "description": "path to a JSON, YAML, or JS file that contains your stylelint configuration object."
       },
       "formatter": {
         "type": "string",
-        "description": "Specify the formatter that you would like to use to format your results"
+        "description": "Specify the formatter that you would like to use to format your results",
+        "default": "json"
       },
       "syntax": {
         "type": "string",
-        "description": "Force a specific non-standard syntax that should be used to parse source stylesheets"
+        "description": "Force a specific non-standard syntax that should be used to parse source stylesheets",
+        "default": "css",
+      "x-prompt": {
+        "message": "Which stylesheet format would you like to use?",
+        "type": "list",
+        "items": [
+          {
+            "value": "css",
+            "label": "CSS"
+          },
+          {
+            "value": "scss",
+            "label": "SASS(.scss)  [ http://sass-lang.com   ]"
+          },
+          {
+            "value": "less",
+            "label": "LESS         [ http://lesscss.org     ]"
+          },
+          {
+            "value": "html",
+            "label": "HTML"
+          }
+        ]
+      }
       },
       "fix": {
         "type": "boolean",
@@ -51,6 +79,6 @@
         "default": false
       }
     },
-    "required": []
+    "required": ["files"]
   }
   

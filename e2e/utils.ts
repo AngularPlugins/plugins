@@ -9,11 +9,14 @@ export function getCwd(): string {
 function patchPackageJsonDeps(projPath) {
   const p = JSON.parse(readFileSync(`${projPath}/package.json`).toString());
   const strykerPath = path.join(getCwd(), 'build', 'packages', 'stryker');
+  const stylelintPath = path.join(getCwd(), 'build', 'packages', 'stylelint');
 
   p.devDependencies['@nrwl/workspace'] = `8.4.12`;
   p.devDependencies['@nrwl/angular'] = `8.4.12`;
 
   p.devDependencies['@angular-plugins/stryker'] = `file:${strykerPath}`;
+  p.devDependencies['@angular-plugins/stylelint'] = `file:${stylelintPath}`;
+
   writeFileSync(`${projPath}/package.json`, JSON.stringify(p, null, 2));
 }
 

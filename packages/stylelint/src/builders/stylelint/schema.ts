@@ -1,5 +1,5 @@
-export interface SchemaObject {
-    length: number;
+export interface SchemaObject extends Object{
+    files: string;
     config?: {
         extends?: string,
         rules?: {[key: string]: any},
@@ -9,7 +9,7 @@ export interface SchemaObject {
         defaultSeverity?: string
     }
     configFile?: string;
-    formatter?: string;
-    syntax?: string;
+    formatter?: "compact"|"json"|"string"|"unix"|"verbose";
+    syntax?: "css-in-js"|"html"|"less"|"markdown"|"sass"|"scss"|"sugarss";
     fix?: string;
   }
