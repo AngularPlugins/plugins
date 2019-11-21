@@ -7,7 +7,7 @@ import {
 import { Observable, from, of } from 'rxjs';
 import { map, tap, catchError } from 'rxjs/operators';
 import { json } from '@angular-devkit/core';
-import { stylelint } from 'stylelint';
+import { lint } from 'stylelint';
 import { StylelintConfiguration } from './build';
 
 export function createStylelintRunner(
@@ -18,8 +18,11 @@ export function createStylelintRunner(
   const config = new StylelintConfiguration(logger, workspaceRoot).validateConfig(
     options
   );
-  return from(stylelint.lint(config)).pipe(
-    map(() => ({ success: true })),
+  return from(lint(config)).pipe(
+    map((data: { output: any, errored: any, results: any })=> { 
+      logger.warn('Errored', data.errored);
+    }),
+    map(() => ({success: true })),
     tap(() => logger.warn('Stylelint ran successfully')),
     catchError(e => {
         logger.warn('Failed to ran stylelint')
