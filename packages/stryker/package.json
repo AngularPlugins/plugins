@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/SebasG22/angular-plugins/issues"
   },
-  "homepage": "https://sample.com",
+  "homepage": "https://angular-plugins.com",
   "schematics": "./collection.json",
   "builders": "./builders.json",
   "peerDependencies": {
