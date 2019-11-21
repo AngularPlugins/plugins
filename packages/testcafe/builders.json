@@ -1,0 +1,11 @@
+{
+    "$schema": "@angular-devkit/architect/src/builders-schema.json",
+    "builders": {
+      "e2e": {
+        "implementation": "./src/builders/testcafe/testcafe.impl",
+        "schema": "./src/builders/testcafe/schema.json",
+        "description": "Run testcafe"
+      }
+    }
+  }
+  

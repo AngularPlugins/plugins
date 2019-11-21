@@ -7,7 +7,7 @@ import {
     runCommandAsync
   } from './utils';
   
-  describe('Stryker', () => {
+  describe.skip('Stryker', () => {
     it('should be able test projects using stylelint', async done => {
       // create a new AngularCLI app
       createAngularProject('sample');
