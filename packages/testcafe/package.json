@@ -1,6 +1,6 @@
 {
     "name": "@angular-plugins/testcafe",
-    "version": "0.0.1",
+    "version": "0.0.2-beta",
     "private": false,
     "description": "Testcafe Plugin for Angular and Nx Repos",
     "repository": {

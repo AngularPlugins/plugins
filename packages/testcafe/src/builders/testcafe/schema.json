@@ -56,6 +56,11 @@
         "type": "string",
         "description": "[Angular] Dev server target to run tests against."
       },
+      "devServerTargetTimeout": {
+        "type": "number",
+        "description": "[Angular] Dev server target Timeout to run tests against.",
+        "default": 15000
+      },
       "disablePageReloads": {
         "type": "boolean",
         "description": "[TestCafe] disable page reloads between tests"

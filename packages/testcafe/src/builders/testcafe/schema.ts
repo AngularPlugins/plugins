@@ -9,6 +9,7 @@ export interface SchemaObject {
     debugOnFail?: boolean;
     dev?: boolean;
     devServerTarget?: string; // set to run ng serve
+    devServerTargetTimeout:number;
     disablePageReloads?: boolean;
     disableScreenshots?: boolean;
     disableTestSyntaxValidation?: boolean;

@@ -34,7 +34,7 @@ async function runTestcafe(opts: TestcafeBuilderSchema, hostName) {
 
 	return runner
         .useProxy(proxy, proxyBypass)
-        .startApp(`yarn ng run ${opts.devServerTarget}`)
+        .startApp(`yarn ng run ${opts.devServerTarget}`, opts.devServerTargetTimeout)
 		.src(opts.src instanceof Array ? opts.src : [ opts.src ])
 		.tsConfigPath(opts.tsConfigPath)
 		.browsers(opts.browsers)
