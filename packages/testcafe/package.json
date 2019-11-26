@@ -1,8 +1,8 @@
 {
-  "name": "@angular-plugins/stylelint",
-  "version": "0.0.1",
+  "name": "@angular-plugins/testcafe",
+  "version": "0.0.2-beta",
   "private": false,
-  "description": "Stylelint Plugin for Angular and Nx Repos",
+  "description": "Testcafe Plugin for Angular and Nx Repos",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SebasG22/angular-plugins"
@@ -12,7 +12,7 @@
     "React",
     "Web",
     "Style",
-    "Stylelint",
+    "TestCafe",
     "Nx"
   ],
   "main": "index.js",

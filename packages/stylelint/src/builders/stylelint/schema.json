@@ -1,55 +1,55 @@
 {
-    "title": "Stylelint builder",
-    "description": "Stylelint builder options",
-    "type": "object",
-    "properties": {
-      "config": {
-        "type": "object",
-        "description": "stylelint configuration object.",
-        "properties":{
-            "extends": {
-                "type": "string",
-                "description": "extend an array of existing configuration"
-            },
-            "rules": {
-                "type": "object",
-                "description": "rules determine what the linter looks for and complains about"
-            },
-            "plugins": {
-                "type": "array",
-                "description": "rules or sets of rules built by the community that support methodologies, toolsets, non-standard CSS features, or very specific use cases."
-            },
-            "processors": {
-                "type": "array",
-                "description": "are functions that hook into stylelint pipeline, modifying code on its way into stylelint and modifying results on their way out."
-            },
-            "ignoreFiles": {
-                "type": "array",
-                "description": "a glob or array of globs to ignore specific files"
-            },
-            "defaultSeverity": {
-                "type": "string",
-                "description": "the default severity level for all rules that do not have a severity specified in their secondary options."
-            }
+  "title": "Stylelint builder",
+  "description": "Stylelint builder options",
+  "type": "object",
+  "properties": {
+    "config": {
+      "type": "object",
+      "description": "stylelint configuration object.",
+      "properties": {
+        "extends": {
+          "type": "string",
+          "description": "extend an array of existing configuration"
+        },
+        "rules": {
+          "type": "object",
+          "description": "rules determine what the linter looks for and complains about"
+        },
+        "plugins": {
+          "type": "array",
+          "description": "rules or sets of rules built by the community that support methodologies, toolsets, non-standard CSS features, or very specific use cases."
+        },
+        "processors": {
+          "type": "array",
+          "description": "are functions that hook into stylelint pipeline, modifying code on its way into stylelint and modifying results on their way out."
+        },
+        "ignoreFiles": {
+          "type": "array",
+          "description": "a glob or array of globs to ignore specific files"
+        },
+        "defaultSeverity": {
+          "type": "string",
+          "description": "the default severity level for all rules that do not have a severity specified in their secondary options."
         }
-      },
-      "files":{
-        "type": "string",
-        "description": "A file glob, or array of file globs. Ultimately passed to globby to figure out what files you want to lint."
-      },    
-      "configFile": {
-        "type": "string",
-        "description": "path to a JSON, YAML, or JS file that contains your stylelint configuration object."
-      },
-      "formatter": {
-        "type": "string",
-        "description": "Specify the formatter that you would like to use to format your results",
-        "default": "json"
-      },
-      "syntax": {
-        "type": "string",
-        "description": "Force a specific non-standard syntax that should be used to parse source stylesheets",
-        "default": "css",
+      }
+    },
+    "files": {
+      "type": "string",
+      "description": "A file glob, or array of file globs. Ultimately passed to globby to figure out what files you want to lint."
+    },
+    "configFile": {
+      "type": "string",
+      "description": "path to a JSON, YAML, or JS file that contains your stylelint configuration object."
+    },
+    "formatter": {
+      "type": "string",
+      "description": "Specify the formatter that you would like to use to format your results",
+      "default": "json"
+    },
+    "syntax": {
+      "type": "string",
+      "description": "Force a specific non-standard syntax that should be used to parse source stylesheets",
+      "default": "css",
       "x-prompt": {
         "message": "Which stylesheet format would you like to use?",
         "type": "list",
@@ -72,13 +72,12 @@
           }
         ]
       }
-      },
-      "fix": {
-        "type": "boolean",
-        "description": "If true, stylelint will fix as many errors as possible",
-        "default": false
-      }
     },
-    "required": ["files"]
-  }
-  
+    "fix": {
+      "type": "boolean",
+      "description": "If true, stylelint will fix as many errors as possible",
+      "default": false
+    }
+  },
+  "required": ["files"]
+}
