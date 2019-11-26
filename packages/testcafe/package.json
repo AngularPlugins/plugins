@@ -1,37 +1,36 @@
 {
-    "name": "@angular-plugins/testcafe",
-    "version": "0.0.2-beta",
-    "private": false,
-    "description": "Testcafe Plugin for Angular and Nx Repos",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/SebasG22/angular-plugins"
-    },
-    "keywords": [
-      "Angular",
-      "React",
-      "Web",
-      "Style",
-      "TestCafe",
-      "Nx"
-    ],
-    "main": "index.js",
-    "types": "index.d.ts",
-    "author": "Sebastian Guevara",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/SebasG22/angular-plugins/issues"
-    },
-    "homepage": "https://angular-plugins.com",
-    "schematics": "./collection.json",
-    "builders": "./builders.json",
-    "peerDependencies": {
-      "@nrwl/workspace": "*"
-    },
-    "dependencies": {
-      "@angular-devkit/architect": "^0.803.2",
-      "@angular-devkit/core": "^8.3.2",
-      "@angular-devkit/schematics": "8.3.3"
-    }
+  "name": "@angular-plugins/testcafe",
+  "version": "0.0.2-beta",
+  "private": false,
+  "description": "Testcafe Plugin for Angular and Nx Repos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebasG22/angular-plugins"
+  },
+  "keywords": [
+    "Angular",
+    "React",
+    "Web",
+    "Style",
+    "TestCafe",
+    "Nx"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Sebastian Guevara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SebasG22/angular-plugins/issues"
+  },
+  "homepage": "https://angular-plugins.com",
+  "schematics": "./collection.json",
+  "builders": "./builders.json",
+  "peerDependencies": {
+    "@nrwl/workspace": "*"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "^0.803.2",
+    "@angular-devkit/core": "^8.3.2",
+    "@angular-devkit/schematics": "8.3.3"
   }
-  
+}

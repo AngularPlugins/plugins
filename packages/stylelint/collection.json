@@ -1,18 +1,17 @@
 {
-    "name": "Angular Stylelint Plugin",
-    "version": "0.1",
-    "schematics": {
-      "init": {
-        "factory": "./src/schematics/init/init",
-        "schema": "./src/schematics/init/schema.json",
-        "description": "Initialize the Angular Stylelint plugin",
-        "hidden": true
-      },
-      "stylelint-project": {
-        "factory": "./src/schematics/stylelint-project/stylelint-project",
-        "schema": "./src/schematics/stylelint-project/schema.json",
-        "description": "Add Stylelint configuration to a project"
-      }
+  "name": "Angular Stylelint Plugin",
+  "version": "0.1",
+  "schematics": {
+    "init": {
+      "factory": "./src/schematics/init/init",
+      "schema": "./src/schematics/init/schema.json",
+      "description": "Initialize the Angular Stylelint plugin",
+      "hidden": true
+    },
+    "stylelint-project": {
+      "factory": "./src/schematics/stylelint-project/stylelint-project",
+      "schema": "./src/schematics/stylelint-project/schema.json",
+      "description": "Add Stylelint configuration to a project"
     }
   }
-  
+}

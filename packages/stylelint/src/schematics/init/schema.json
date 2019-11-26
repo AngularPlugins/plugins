@@ -1,8 +1,7 @@
 {
-    "$schema": "http://json-schema.org/schema",
-    "id": "stylelint-init",
-    "title": "Add Stylelint Configuration to the workspace",
-    "type": "object",
-    "properties": {}
-  }
-  
+  "$schema": "http://json-schema.org/schema",
+  "id": "stylelint-init",
+  "title": "Add Stylelint Configuration to the workspace",
+  "type": "object",
+  "properties": {}
+}
